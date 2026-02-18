@@ -60,4 +60,9 @@
         <property name="entityManagerFactory" ref="entityManagerFactoryBean" />
     </bean>
 
+    <!-- DAO Beans -->
+    <bean id="uzytkownikDao" class="WWSIS.dao.impl.UzytkownikDaoImpl" />
+    <bean id="wpisDao" class="WWSIS.dao.impl.WpisDaoImpl" />
+    <bean id="followerDao" class="WWSIS.dao.impl.FollowerDaoImpl" />
+
 </beans>
