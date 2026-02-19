@@ -1,17 +1,9 @@
+// src/main/java/WWSIS/dao/UzytkownikDao.java
 package WWSIS.dao;
 
 import WWSIS.model.Uzytkownik;
 
 public interface UzytkownikDao {
-
-    /**
-     * Pobiera użytkownika po loginie
-     */
-    Uzytkownik getUserByLogin(String login);
-
-    /**
-     * Rejestruje/dodaje nowego użytkownika
-     */
-    void registerUser(Uzytkownik uzytkownik);
-
+    Uzytkownik findByLogin(String login);
+    void insert(Uzytkownik uzytkownik);
 }

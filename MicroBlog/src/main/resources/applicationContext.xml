@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+    <!-- Skanuj cały pakiet WWSIS – łapie @Repository w DAO implach, encje itd. -->
+    <context:component-scan base-package="WWSIS" />
+
+    <!-- HSQLDB in-memory – idealne na lab i testy, nie wymaga zewnętrznego serwera -->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="org.hsqldb.jdbc.JDBCDriver"/>
+        <property name="url" value="jdbc:hsqldb:mem:microblog;sql.syntax_mys=true"/>
+        <property name="username" value="sa"/>
+        <property name="password" value=""/>
+    </bean>
+
+    <!-- Transakcje – obowiązkowe dla @Transactional w DAO/testach -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- EntityManagerFactory – skanuje encje z pakietu model -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="WWSIS.model"/>
+
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="showSql" value="true"/>
+                <property name="databasePlatform" value="org.hibernate.dialect.HSQLDialect"/>
+            </bean>
+        </property>
+
+        <property name="jpaProperties">
+            <props>
+                <!-- update dopasuje schemat do encji (INTEGER/BIGINT nie będzie już wywalać) -->
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.use_sql_comments">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Transaction Manager – potrzebny do @Transactional -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+
+    <!-- Ręczne beany DAO – jeśli component-scan nie łapie (zakomentowane, odkomentuj jeśli potrzeba) -->
+    <!--
+    <bean id="uzytkownikDao" class="WWSIS.dao.impl.UzytkownikDaoImpl"/>
+    <bean id="followerDao" class="WWSIS.dao.impl.FollowerDaoImpl"/>
+    <bean id="wpisDao" class="WWSIS.dao.impl.WpisDaoImpl"/>
+    -->
+
+</beans>

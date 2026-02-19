@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3d59c50-e5a3-4359-b57e-120de441f652" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WWSIS/DbSmoke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WWSIS/EmSmoke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/FollowerDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/UzytkownikDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/WpisDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/jvm.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/maven.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/FollowerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/FollowerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/UzytkownikDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/UzytkownikDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/WpisDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/WpisDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/FollowerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/FollowerDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/UzytkownikDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/UzytkownikDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/WpisDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/WpisDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/model/Follower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/model/Follower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/model/Uzytkownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/model/Uzytkownik.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/model/Wpis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/model/Wpis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/rootApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rootApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WWSIS/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WWSIS/AppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="26" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="39sX3uzYZADfz9wUJsJFQ77CnIF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DbSmoke.executor": "Run",
+    "Application.EmSmoke.executor": "Run",
+    "JUnit.FollowerDaoTest.executor": "Run",
+    "JUnit.UzytkownikDaoTest (1).executor": "Run",
+    "JUnit.UzytkownikDaoTest.executor": "Run",
+    "JUnit.WpisDaoTest.executor": "Run",
+    "Maven.MicroBlog [clean].executor": "Run",
+    "Maven.MicroBlog [install].executor": "Run",
+    "Maven.MicroBlog [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.LLMAiRulesSettingsProvider",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GITHUB\ZajSpec_MicroBlog\MicroBlog\src\main\webapp\WEB-INF" />
+      <recent name="C:\GITHUB\ZajSpec_MicroBlog\MicroBlog\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="WWSIS" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.WpisDaoTest">
+    <configuration name="FollowerDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MicroBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WWSIS.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WWSIS.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="WWSIS.dao.impl.FollowerDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UzytkownikDaoTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MicroBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WWSIS.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WWSIS.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="WWSIS.dao.impl.UzytkownikDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UzytkownikDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MicroBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WWSIS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WWSIS" />
+      <option name="MAIN_CLASS_NAME" value="WWSIS.UzytkownikDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WpisDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MicroBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WWSIS.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WWSIS.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="WWSIS.dao.impl.WpisDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WpisDaoTest" />
+        <item itemvalue="JUnit.UzytkownikDaoTest (1)" />
+        <item itemvalue="JUnit.FollowerDaoTest" />
+        <item itemvalue="JUnit.UzytkownikDaoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3d59c50-e5a3-4359-b57e-120de441f652" name="Changes" comment="" />
+      <created>1771485556252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771485556252</updated>
+      <workItem from="1771485558134" duration="6746000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,7 +1,8 @@
 package WWSIS.model;
 
+
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Table(name = "uzytkownik")
@@ -11,60 +12,31 @@ public class Uzytkownik {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "login", nullable = false, unique = true, length = 50)
+    @Column(name="login", nullable=false, unique=true, length=50)
     private String login;
 
-    @Column(name = "haslo", nullable = false, length = 100)
+    @Column(name="haslo", nullable=false, length=100)
     private String haslo;
 
-    @Column(name = "email", nullable = false, unique = true, length = 100)
+    @Column(name="email", nullable=false, unique=true, length=100)
     private String email;
 
-    @Column(name = "data_rejestracji")
-    private LocalDateTime dataRejestracji;
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name="data_rejestracji")
+    private Date dataRejestracji;
 
-    // Konstruktor bezparametrowy (wymagany przez JPA)
-    public Uzytkownik() {
-    }
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
 
-    // Gettery i settery
-    public Integer getId() {
-        return id;
-    }
+    public String getLogin() { return login; }
+    public void setLogin(String login) { this.login = login; }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    public String getHaslo() { return haslo; }
+    public void setHaslo(String haslo) { this.haslo = haslo; }
 
-    public String getLogin() {
-        return login;
-    }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
 
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getHaslo() {
-        return haslo;
-    }
-
-    public void setHaslo(String haslo) {
-        this.haslo = haslo;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public LocalDateTime getDataRejestracji() {
-        return dataRejestracji;
-    }
-
-    public void setDataRejestracji(LocalDateTime dataRejestracji) {
-        this.dataRejestracji = dataRejestracji;
-    }
+    public Date getDataRejestracji() { return dataRejestracji; }
+    public void setDataRejestracji(Date dataRejestracji) { this.dataRejestracji = dataRejestracji; }
 }

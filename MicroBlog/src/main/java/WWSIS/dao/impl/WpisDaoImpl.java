@@ -2,47 +2,57 @@ package WWSIS.dao.impl;
 
 import WWSIS.dao.WpisDao;
 import WWSIS.model.Wpis;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 import java.util.List;
 
-@Transactional
+@Repository
 public class WpisDaoImpl implements WpisDao {
 
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
-    public List<Wpis> getWpisyByUserId(Integer uzytkownikId) {
-        String jpql = "SELECT w FROM Wpis w WHERE w.uzytkownikId = :userId ORDER BY w.dataUtworzenia DESC";
-        Query query = entityManager.createQuery(jpql);
-        query.setParameter("userId", uzytkownikId);
-        return query.getResultList();
+    public List<Wpis> timeline(Integer userId) {  // Integer, bo FK
+        return entityManager.createQuery(
+                        "select w from Wpis w " +
+                                "where w.uzytkownikId = :userId " +  // FK uzytkownikId, nie uzytkownik.id
+                                "order by w.dataUtworzenia desc", Wpis.class)
+                .setParameter("userId", userId)
+                .getResultList();
     }
 
     @Override
-    public List<Wpis> getFullTimelineForUser(Integer uzytkownikId) {
-        // Pobierz wpisy użytkownika + wpisy od użytkowników których śledzi
-        String jpql = "SELECT w FROM Wpis w WHERE w.uzytkownikId = :userId " +
-                "OR w.uzytkownikId IN (SELECT f.uzytkownikId FROM Follower f WHERE f.followerId = :userId) " +
-                "ORDER BY w.dataUtworzenia DESC";
-        Query query = entityManager.createQuery(jpql);
-        query.setParameter("userId", uzytkownikId);
-        return query.getResultList();
+    public List<Wpis> publicTimeline() {
+        return entityManager.createQuery(
+                        "select w from Wpis w " +
+                                "order by w.dataUtworzenia desc", Wpis.class)
+                .getResultList();
     }
 
     @Override
-    public List<Wpis> getAllWpisy() {
-        String jpql = "SELECT w FROM Wpis w ORDER BY w.dataUtworzenia DESC";
-        Query query = entityManager.createQuery(jpql);
-        return query.getResultList();
+    public List<Wpis> fullTimeline(Integer userId) {
+        // full timeline = moje wpisy + wpisy osób, które obserwuję
+        // Zakładam FK uzytkownikId w Wpis, followerId/uzytkownikId w Follower
+
+        return entityManager.createQuery(
+                        "select w from Wpis w " +
+                                "where w.uzytkownikId = :userId " +
+                                "   or w.uzytkownikId in (" +
+                                "       select f.uzytkownikId from Follower f " +
+                                "       where f.followerId = :userId" +
+                                "   ) " +
+                                "order by w.dataUtworzenia desc", Wpis.class)
+                .setParameter("userId", userId)
+                .getResultList();
     }
 
     @Override
-    public void addWpis(Wpis wpis) {
+    @Transactional
+    public void insert(Wpis wpis) {
         entityManager.persist(wpis);
     }
 }

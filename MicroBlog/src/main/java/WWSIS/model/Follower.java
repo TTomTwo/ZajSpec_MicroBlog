@@ -1,15 +1,17 @@
 package WWSIS.model;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
+
+import java.util.Date;
 
 @Entity
-@Table(name = "follower")
+@Table(name = "follower",
+        uniqueConstraints = @UniqueConstraint(columnNames = {"uzytkownik_id", "follower_id"}))
 public class Follower {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer id;   // <-- zmienione na Integer, bo to standard i lepiej niż Integer
 
     @Column(name = "uzytkownik_id", nullable = false)
     private Integer uzytkownikId;
@@ -17,10 +19,11 @@ public class Follower {
     @Column(name = "follower_id", nullable = false)
     private Integer followerId;
 
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data_dodania")
-    private LocalDateTime dataDodania;
+    private Date dataDodania;
 
-    // Konstruktor bezparametrowy
+    // KONSTRUKTOR pusty (Hibernate lubi)
     public Follower() {
     }
 
@@ -49,11 +52,11 @@ public class Follower {
         this.followerId = followerId;
     }
 
-    public LocalDateTime getDataDodania() {
+    public Date getDataDodania() {
         return dataDodania;
     }
 
-    public void setDataDodania(LocalDateTime dataDodania) {
+    public void setDataDodania(Date dataDodania) {
         this.dataDodania = dataDodania;
     }
 }

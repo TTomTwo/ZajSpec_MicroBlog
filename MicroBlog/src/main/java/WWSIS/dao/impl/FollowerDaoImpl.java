@@ -2,49 +2,50 @@ package WWSIS.dao.impl;
 
 import WWSIS.dao.FollowerDao;
 import WWSIS.model.Follower;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
-import java.time.LocalDateTime;
-import java.util.List;
 
-@Transactional
+@Repository
 public class FollowerDaoImpl implements FollowerDao {
 
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
-    public void followUser(Integer followerId, Integer uzytkownikId) {
-        // Sprawdź czy już nie śledzi
-        if (!isFollowing(followerId, uzytkownikId)) {
-            Follower follower = new Follower();
-            follower.setFollowerId(followerId);
-            follower.setUzytkownikId(uzytkownikId);
-            follower.setDataDodania(LocalDateTime.now());
-            entityManager.persist(follower);
-        }
+    @Transactional
+    public void follow(Integer followerId, Integer followeeId) {
+        if (followerId.equals(followeeId)) return;
+        if (isFollowing(followerId, followeeId)) return;
+
+        Follower f = new Follower();
+        f.setFollowerId(followerId);  // Integer
+        f.setUzytkownikId(followeeId);  // Integer
+
+        entityManager.persist(f);
     }
 
     @Override
-    public void unfollowUser(Integer followerId, Integer uzytkownikId) {
-        String jpql = "DELETE FROM Follower f WHERE f.followerId = :followerId AND f.uzytkownikId = :uzytkownikId";
-        Query query = entityManager.createQuery(jpql);
-        query.setParameter("followerId", followerId);
-        query.setParameter("uzytkownikId", uzytkownikId);
-        query.executeUpdate();
+    @Transactional
+    public void unfollow(Integer followerId, Integer followeeId) {
+        entityManager.createQuery(
+                        "delete from Follower f where f.followerId = :fid and f.uzytkownikId = :uid")
+                .setParameter("fid", followerId)
+                .setParameter("uid", followeeId)
+                .executeUpdate();
     }
 
     @Override
-    public boolean isFollowing(Integer followerId, Integer uzytkownikId) {
-        String jpql = "SELECT f FROM Follower f WHERE f.followerId = :followerId AND f.uzytkownikId = :uzytkownikId";
-        Query query = entityManager.createQuery(jpql);
-        query.setParameter("followerId", followerId);
-        query.setParameter("uzytkownikId", uzytkownikId);
+    public boolean isFollowing(Integer followerId, Integer followeeId) {
+        Long cnt = entityManager.createQuery(
+                        "select count(f) from Follower f where f.followerId = :fid and f.uzytkownikId = :uid",
+                        Long.class)
+                .setParameter("fid", followerId)
+                .setParameter("uid", followeeId)
+                .getSingleResult();
 
-        List<Follower> results = query.getResultList();
-        return !results.isEmpty();
+        return cnt != null && cnt > 0;
     }
 }

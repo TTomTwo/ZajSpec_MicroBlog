@@ -1,7 +1,8 @@
 package WWSIS.model;
 
+
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Table(name = "wpis")
@@ -11,49 +12,25 @@ public class Wpis {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "uzytkownik_id", nullable = false)
+    @Column(name="uzytkownik_id", nullable=false)
     private Integer uzytkownikId;
 
-    @Column(name = "tresc", nullable = false, length = 280)
+    @Column(name="tresc", nullable=false, length=280)
     private String tresc;
 
-    @Column(name = "data_utworzenia")
-    private LocalDateTime dataUtworzenia;
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name="data_utworzenia")
+    private Date dataUtworzenia;
 
-    // Konstruktor bezparametrowy
-    public Wpis() {
-    }
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
 
-    // Gettery i settery
-    public Integer getId() {
-        return id;
-    }
+    public Integer getUzytkownikId() { return uzytkownikId; }
+    public void setUzytkownikId(Integer uzytkownikId) { this.uzytkownikId = uzytkownikId; }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    public String getTresc() { return tresc; }
+    public void setTresc(String tresc) { this.tresc = tresc; }
 
-    public Integer getUzytkownikId() {
-        return uzytkownikId;
-    }
-
-    public void setUzytkownikId(Integer uzytkownikId) {
-        this.uzytkownikId = uzytkownikId;
-    }
-
-    public String getTresc() {
-        return tresc;
-    }
-
-    public void setTresc(String tresc) {
-        this.tresc = tresc;
-    }
-
-    public LocalDateTime getDataUtworzenia() {
-        return dataUtworzenia;
-    }
-
-    public void setDataUtworzenia(LocalDateTime dataUtworzenia) {
-        this.dataUtworzenia = dataUtworzenia;
-    }
+    public Date getDataUtworzenia() { return dataUtworzenia; }
+    public void setDataUtworzenia(Date dataUtworzenia) { this.dataUtworzenia = dataUtworzenia; }
 }
