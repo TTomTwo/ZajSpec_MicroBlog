@@ -58,5 +58,6 @@
     <bean id="followerDao" class="WWSIS.dao.impl.FollowerDaoImpl"/>
     <bean id="wpisDao" class="WWSIS.dao.impl.WpisDaoImpl"/>
     -->
-
+    <!-- Service bean -->
+    <bean id="microblogService" class="WWSIS.service.impl.MicroblogServiceImpl"/>
 </beans>

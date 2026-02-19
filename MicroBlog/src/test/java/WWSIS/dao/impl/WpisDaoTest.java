@@ -45,14 +45,14 @@ public class WpisDaoTest {
         uzytkownikDao.insert(author);
 
         wpis1 = new Wpis();
-        wpis1.setTresc("Pierwszy wpis – boli jak cholera");
+        wpis1.setTresc("Pierwszy wpis – Mój kot jest miękki");
         wpis1.setDataUtworzenia(new Date());
         wpis1.setUzytkownikId(author.getId());  // FK Integer, nie relacja
         wpisDao.insert(wpis1);
 
         try { Thread.sleep(100); } catch (Exception ignored) {}
         wpis2 = new Wpis();
-        wpis2.setTresc("Drugi wpis – jeszcze bardziej boli");
+        wpis2.setTresc("Drugi wpis – haha, maven robi brrrrr");
         wpis2.setDataUtworzenia(new Date());
         wpis2.setUzytkownikId(author.getId());
         wpisDao.insert(wpis2);

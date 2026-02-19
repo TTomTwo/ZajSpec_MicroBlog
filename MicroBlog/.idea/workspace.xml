@@ -5,34 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3d59c50-e5a3-4359-b57e-120de441f652" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WWSIS/DbSmoke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WWSIS/EmSmoke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/FollowerDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/UzytkownikDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/WpisDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/jvm.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/maven.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/FollowerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/FollowerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/UzytkownikDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/UzytkownikDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/WpisDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/WpisDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/FollowerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/FollowerDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/UzytkownikDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/UzytkownikDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/WpisDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/WpisDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/model/Follower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/model/Follower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/model/Uzytkownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/model/Uzytkownik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/model/Wpis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/model/Wpis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/rootApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rootApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WWSIS/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WWSIS/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WWSIS/service/MicroblogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WWSIS/service/impl/MicroblogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WWSIS/service/impl/MicroblogServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/UzytkownikDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/UzytkownikDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/WpisDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/WpisDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +41,9 @@
   "associatedIndex": 1
 }]]></component>
   <component name="ProjectId" id="39sX3uzYZADfz9wUJsJFQ77CnIF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,6 +53,7 @@
     "Application.DbSmoke.executor": "Run",
     "Application.EmSmoke.executor": "Run",
     "JUnit.FollowerDaoTest.executor": "Run",
+    "JUnit.MicroblogServiceImplTest.executor": "Run",
     "JUnit.UzytkownikDaoTest (1).executor": "Run",
     "JUnit.UzytkownikDaoTest.executor": "Run",
     "JUnit.WpisDaoTest.executor": "Run",
@@ -102,7 +85,7 @@
       <recent name="WWSIS" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WpisDaoTest">
+  <component name="RunManager" selected="JUnit.MicroblogServiceImplTest">
     <configuration name="FollowerDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MicroBlog" />
       <extension name="coverage">
@@ -113,6 +96,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="WWSIS.dao.impl" />
       <option name="MAIN_CLASS_NAME" value="WWSIS.dao.impl.FollowerDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroblogServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MicroBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WWSIS.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WWSIS.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="WWSIS.service.impl.MicroblogServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,9 +163,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WpisDaoTest" />
-        <item itemvalue="JUnit.UzytkownikDaoTest (1)" />
+        <item itemvalue="JUnit.MicroblogServiceImplTest" />
         <item itemvalue="JUnit.FollowerDaoTest" />
+        <item itemvalue="JUnit.UzytkownikDaoTest (1)" />
+        <item itemvalue="JUnit.WpisDaoTest" />
         <item itemvalue="JUnit.UzytkownikDaoTest" />
       </list>
     </recent_temporary>
@@ -187,7 +186,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1771485556252</updated>
-      <workItem from="1771485558134" duration="6746000" />
+      <workItem from="1771485558134" duration="8889000" />
     </task>
     <servers />
   </component>

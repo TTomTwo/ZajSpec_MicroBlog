@@ -29,9 +29,9 @@ public class UzytkownikDaoTest {
         String unique = String.valueOf(System.currentTimeMillis());
 
         testUser = new Uzytkownik();
-        testUser.setLogin("testMasochista_" + unique);
+        testUser.setLogin("ZonaMnieBije_" + unique);
         testUser.setHaslo("hash_bol_duzy");
-        testUser.setEmail("bol@wdupie_" + unique + ".pl");
+        testUser.setEmail("konto@hotmail_" + unique + ".pl");
 
         uzytkownikDao.insert(testUser);
     }
@@ -48,8 +48,8 @@ public class UzytkownikDaoTest {
 
     @Test
     public void testFindByLoginNotFound() {
-        Uzytkownik notFound = uzytkownikDao.findByLogin("nieistniejacy_maso_frajer_666");
+        Uzytkownik notFound = uzytkownikDao.findByLogin("nieistniejacy_typ");
 
-        assertNull("Nie powinno znaleźć gówna, którego nie ma", notFound);
+        assertNull("Nie powinno znaleźć tego, którego nie ma", notFound);
     }
 }
