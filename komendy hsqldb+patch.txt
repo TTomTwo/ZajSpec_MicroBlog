@@ -1,0 +1,19 @@
+==START
+cd C:\tools\hsqldb
+& "C:\Users\ttomt\.jdks\temurin-1.8.0_482\bin\java.exe" -classpath lib/hsqldb.jar org.hsqldb.server.Server --database.0 file:hsqldb/hemrajdb --dbname.0 testdb
+
+==GUI
+& "C:\Users\ttomt\.jdks\temurin-1.8.0_482\bin\java.exe" -jar C:\tools\hsqldb\lib\hsqldb.jar
+
+PO ZAŁADOWANIU .SQL
+-- Usuń wszystkie dane
+DELETE FROM wpis;
+DELETE FROM follower;
+DELETE FROM uzytkownik;
+
+-- Zresetuj sekwencje ID (HSQLDB specyficzne)
+ALTER TABLE uzytkownik ALTER COLUMN id RESTART WITH 1;
+ALTER TABLE follower ALTER COLUMN id RESTART WITH 1;
+ALTER TABLE wpis ALTER COLUMN id RESTART WITH 1;
+
+Potem wykonaj ponownie insert-data.sql

@@ -11,10 +11,10 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
-    <!-- Skanuj cały pakiet WWSIS – łapie @Repository w DAO implach, encje itd. -->
+    <!-- Skanowanie całego pakietu WWSIS w celu znalezienia komponentów Spring (@Repository w DAO, encje, itp.) -->
     <context:component-scan base-package="WWSIS" />
 
-    <!-- HSQLDB in-memory – idealne na lab i testy, nie wymaga zewnętrznego serwera -->
+    <!-- Konfiguracja źródła danych dla bazy danych HSQLDB w pamięci (idealne na testy) -->
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="org.hsqldb.jdbc.JDBCDriver"/>
         <property name="url" value="jdbc:hsqldb:mem:microblog;sql.syntax_mys=true"/>
@@ -22,10 +22,10 @@
         <property name="password" value=""/>
     </bean>
 
-    <!-- Transakcje – obowiązkowe dla @Transactional w DAO/testach -->
+    <!-- Konfiguracja zarządzania transakcjami – wymagane dla @Transactional w DAO/testach -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
-    <!-- EntityManagerFactory – skanuje encje z pakietu model -->
+    <!-- Konfiguracja EntityManagerFactory do pracy z JPA (Hibernate) – skanowanie pakietu model z encjami -->
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan" value="WWSIS.model"/>
@@ -47,7 +47,7 @@
         </property>
     </bean>
 
-    <!-- Transaction Manager – potrzebny do @Transactional -->
+    <!-- Konfiguracja TransactionManager – niezbędne do używania @Transactional w Springu -->
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory"/>
     </bean>
@@ -58,6 +58,6 @@
     <bean id="followerDao" class="WWSIS.dao.impl.FollowerDaoImpl"/>
     <bean id="wpisDao" class="WWSIS.dao.impl.WpisDaoImpl"/>
     -->
-    <!-- Service bean -->
+    <!-- Definicja beana dla serwisu Microblog -->
     <bean id="microblogService" class="WWSIS.service.impl.MicroblogServiceImpl"/>
 </beans>

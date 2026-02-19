@@ -1,22 +1,26 @@
 package WWSIS;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.Connection;  // Importujemy klasę Connection do nawiązywania połączenia z bazą danych.
+import java.sql.DriverManager;  // Importujemy klasę DriverManager do zarządzania połączeniami z bazą danych.
+import java.sql.ResultSet;  // Importujemy klasę ResultSet do przechwytywania wyników zapytań SQL.
+import java.sql.Statement;  // Importujemy klasę Statement do wykonywania zapytań SQL.
 
 public class DbSmoke {
     public static void main(String[] args) throws Exception {
-        String url = "jdbc:hsqldb:hsql://localhost:9001/testdb";
-        String user = "SA";
-        String pass = "";
+        // Ustawienie szczegółów połączenia z bazą danych
+        String url = "jdbc:hsqldb:hsql://localhost:9001/testdb";  // URL bazy danych HSQLDB, wskazujący na lokalny serwer i bazę testową
+        String user = "SA";  // Użytkownik bazy danych
+        String pass = "";  // Hasło bazy danych (puste w tym przypadku)
 
-        try (Connection c = DriverManager.getConnection(url, user, pass);
-             Statement st = c.createStatement();
-             ResultSet rs = st.executeQuery("SELECT 1 FROM (VALUES(1))")) {
+        // Blok try-with-resources zapewnia automatyczne zamknięcie zasobów po zakończeniu pracy
+        try (Connection c = DriverManager.getConnection(url, user, pass);  // Uzyskujemy połączenie z bazą danych
+             Statement st = c.createStatement();  // Tworzymy obiekt Statement do wykonywania zapytań SQL
+             ResultSet rs = st.executeQuery("SELECT 1 FROM (VALUES(1))")) {  // Wykonujemy zapytanie SQL, które zwraca wynik 1
 
+            // Pętla while przechodzi przez wyniki zapytania
             while (rs.next()) {
-                System.out.println("DB OK -> " + rs.getInt(1));
+                // Wypisujemy wynik zapytania
+                System.out.println("DB OK -> " + rs.getInt(1));  // Wypisuje wartość z pierwszej kolumny wyniku zapytania (1)
             }
         }
     }

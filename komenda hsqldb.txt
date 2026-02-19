@@ -1,7 +1,0 @@
-"C:\Users\ttomt\.jdks\ms-17.0.18\bin\java.exe" -classpath lib/hsqldb.jar org.hsqldb.server.Server
-
-
-& "C:\Users\ttomt\.jdks\ms-17.0.18\bin\java.exe" -classpath lib/hsqldb.jar org.hsqldb.server.Server --database.0 file:hsqldb/hemrajdb
---dbname.0 testdb
-
-& "C:\Users\ttomt\.jdks\ms-17.0.18\bin\java.exe" -classpath ../lib/hsqldb.jar org.hsqldb.util.DatabaseManagerSwing

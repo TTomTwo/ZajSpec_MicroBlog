@@ -4,4 +4,11 @@
        xsi:schemaLocation="
            http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    <!-- Tutaj będą definiowane bean'y Springa, które mogą być wstrzykiwane do innych części aplikacji -->
 </beans>
+
+        <!-- 2 Definicja przestrzeni nazw dla konfiguracji Spring Beans -->
+        <!-- 3 Przestrzeń nazw dla walidacji XML -->
+        <!-- 4 Określa lokalizację schematu XML, który będzie używany do walidacji pliku -->
+        <!-- 5 URL do schematu dla Spring Beans -->
+        <!-- 6 Lokalizacja schematu dla Spring Beans 4.0 -->
