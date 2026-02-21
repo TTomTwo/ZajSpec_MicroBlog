@@ -5,28 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3d59c50-e5a3-4359-b57e-120de441f652" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/DbSmoke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/DbSmoke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/EmSmoke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/EmSmoke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/FollowerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/FollowerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/UzytkownikDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/UzytkownikDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/WpisDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/WpisDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/FollowerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/FollowerDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/UzytkownikDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/UzytkownikDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/WpisDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/dao/impl/WpisDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/model/Follower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/model/Follower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/model/Uzytkownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/model/Uzytkownik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WWSIS/model/Wpis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WWSIS/model/Wpis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rootApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rootApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/FollowerDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/FollowerDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/UzytkownikDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/UzytkownikDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/WpisDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WWSIS/dao/impl/WpisDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WWSIS/service/impl/MicroblogServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WWSIS/service/impl/MicroblogServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../komenda hsqldb.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TTomTwo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TTomTwo/ZajSpec_MicroBlog.git&quot;,
+    &quot;accountId&quot;: &quot;8cb4e01f-a9fb-4d6d-837a-3c701feb19dd&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -83,6 +74,7 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GITHUB/ZajSpec_MicroBlog/MicroBlog&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -104,9 +96,9 @@
       <recent name="WWSIS" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EmSmoke">
-    <configuration name="DbSmoke" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WWSIS.DbSmoke" />
+  <component name="RunManager" selected="JUnit.MicroblogServiceImplTest">
+    <configuration name="EmSmoke" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WWSIS.EmSmoke" />
       <module name="MicroBlog" />
       <extension name="coverage">
         <pattern>
@@ -118,15 +110,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmSmoke" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WWSIS.EmSmoke" />
+    <configuration name="FollowerDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MicroBlog" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="WWSIS.*" />
+          <option name="PATTERN" value="WWSIS.dao.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="WWSIS.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="WWSIS.dao.impl.FollowerDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EmSmoke" />
-        <item itemvalue="JUnit.UzytkownikDaoTest" />
-        <item itemvalue="JUnit.WpisDaoTest" />
         <item itemvalue="JUnit.MicroblogServiceImplTest" />
-        <item itemvalue="Application.DbSmoke" />
+        <item itemvalue="JUnit.WpisDaoTest" />
+        <item itemvalue="JUnit.UzytkownikDaoTest" />
+        <item itemvalue="JUnit.FollowerDaoTest" />
+        <item itemvalue="Application.EmSmoke" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +201,9 @@
       <workItem from="1771535085287" duration="2692000" />
       <workItem from="1771538112717" duration="1143000" />
       <workItem from="1771660204118" duration="17000" />
+      <workItem from="1771660259593" duration="79000" />
+      <workItem from="1771660593654" duration="91000" />
+      <workItem from="1771660744993" duration="14000" />
     </task>
     <servers />
   </component>
